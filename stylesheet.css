@@ -1,3 +1,9 @@
+.sketch-container {
+  height: 80vh;
+  margin: auto;
+  width: 80%;
+}
+
 #board {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -6,4 +12,5 @@
 
 #board div {
   border-style:solid;
+  height: 55px;
 }
