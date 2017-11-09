@@ -1,38 +1,22 @@
-/* #board {
-  position: relative;
-  max-width: 90vh;
-  max-height: 90vh;
-  background-color: red;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+:root {
+  --number-of-squares: 16;
+  --background-color: white;
 }
-
-#board:before {
-  content: "";
-  display:block;
-  padding-top: 100%;
-}
-
-#board div {
-  border-style:solid;
-  position: absolute;
-}
-*/
-/* h3 {
-  float: left;
-  margin-right: 15px;
-}
-
-button {
-  margin-top: 12px;
-} */
 
 #board {
-  display:grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  border: black solid;
   width: 80vh;
   height: 80vh;
-  border-style: solid;
+  display: grid;
+  grid-template-columns: repeat(var(--number-of-squares), 1fr);
+  grid-template-rows: repeat(var(--number-of-squares), 1fr)
+}
+
+.grid {
+  border: darkblue solid 1px;
+  background: var(--background-color)
+}
+
+.selected {
+  background-color: blue;
 }
