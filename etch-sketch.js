@@ -5,9 +5,9 @@ for(var i = 0; i < 8*8; i++) {
 }
 
 for(var i = 0; i < board.children.length; i++) {
-  board.children[i].addEventListener("click", changeColor(board.children[i]));
+  board.children[i].addEventListener("mouseenter", e => e.target.style.backgroundColor = "red");
 }
 
 function changeColor(node) {
-  console.log(node)
+  node
 }
