@@ -3,9 +3,16 @@
   --background-color: white;
 }
 
-header {
+.controls {
+  width: 100%;
+  margin: auto;
   margin-bottom: 20px;
+  text-align: center;
 }
+
+ /* {
+  margin: auto;
+} */
 
 #board {
   border: black solid;
@@ -13,7 +20,8 @@ header {
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(var(--number-of-squares), 1fr);
-  grid-template-rows: repeat(var(--number-of-squares), 1fr)
+  grid-template-rows: repeat(var(--number-of-squares), 1fr);
+  margin:auto;
 }
 
 .grid {
