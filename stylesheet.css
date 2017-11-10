@@ -3,32 +3,57 @@
   --background-color: white;
 }
 
+body {
+  background-color: #c0d7bb;
+}
+
+h3 {
+  color: black;
+}
+
 .controls {
   width: 100%;
   margin: auto;
-  margin-bottom: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
- /* {
-  margin: auto;
-} */
+.controls input{
+  text-align: center;
+  width: 150px;
+}
+
+.controls button {
+ background-color: #85bda6;
+ color: black;
+ border-radius: 4px;
+ border-width: 1px;
+ border: solid #85bda6;
+ padding: 5px;
+ margin-top: 5px;
+}
 
 #board {
   border: black solid;
-  width: 80vh;
-  height: 80vh;
+  width: 75vh;
+  height: 75vh;
   display: grid;
   grid-template-columns: repeat(var(--number-of-squares), 1fr);
   grid-template-rows: repeat(var(--number-of-squares), 1fr);
-  margin:auto;
+  margin: auto;
 }
 
 .grid {
-  border: darkblue solid 1px;
-  background: var(--background-color)
+  background: #a9fff7;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to   {opacity: 1;}
 }
 
 .selected {
-  background-color: blue;
+  animation: fade-in .5s;
+  background-color: #3e885b;
 }
