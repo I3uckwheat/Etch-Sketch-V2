@@ -1,5 +1,6 @@
 const board = document.querySelector("#board");
-const numberForm = document.forms["grid-size"];
+const button = document.querySelector("button");
+const input = document.querySelector("input");
 
 
 buildGrid(8);
@@ -20,11 +21,11 @@ function addListeners(){
       e.target.classList.add('selected'))
   );
 
-   numberForm["button"].addEventListener("click", newGrid);
+   button.addEventListener("click", newGrid);
 }
 
 function newGrid() {
   board.innerHTML = "";
-  buildGrid(numberForm["num"].value);
+  buildGrid(input.value);
   addListeners();
 }
