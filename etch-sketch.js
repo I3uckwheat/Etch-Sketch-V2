@@ -6,7 +6,7 @@ buildGrid(8);
 addListeners();
 
 function buildGrid(num){
-  document.body.style.setProperty("--number-of-squares", num ** 2);
+  board.style.setProperty("--number-of-squares", num);
   for(let i = num ** 2; i>0; i--) {
     const div = document.createElement('div');
     div.classList.add('grid')
