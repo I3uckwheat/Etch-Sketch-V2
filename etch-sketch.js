@@ -1,13 +1,12 @@
-const numberOfSquares = 12;
 const board = document.querySelector("#board");
 const numberForm = document.forms["grid-size"];
 
-document.body.style.setProperty("--number-of-squares", numberOfSquares);
 
-buildGrid(numberOfSquares);
+buildGrid(8);
 addListeners();
 
 function buildGrid(num){
+  document.body.style.setProperty("--number-of-squares", num ** 2);
   for(let i = num ** 2; i>0; i--) {
     const div = document.createElement('div');
     div.classList.add('grid')
